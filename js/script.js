@@ -14,13 +14,14 @@ class Timer {
 		this.timer;
 	}
 	get(){
-		console.log(this.timeToFinish);
 		return this.timeToFinish;
 	}
 	startTimer(){
 		let self = this;
 		this.timer = setInterval(function () {
-			self.button.innerHTML = `${Math.trunc(self.timeToFinish/60/60%60)}:${Math.trunc(self.timeToFinish/60%60)}:${Math.trunc(self.timeToFinish%60)}`;
+			self.button.innerHTML = `${Math.trunc(self.timeToFinish/60/60%60) < 10 ? '0' + Math.trunc(self.timeToFinish/60/60%60):Math.trunc(self.timeToFinish/60/60%60)}:
+			${Math.trunc(self.timeToFinish/60%60) < 10 ? '0' + Math.trunc(self.timeToFinish/60%60) :Math.trunc(self.timeToFinish/60%60) }:
+			${Math.trunc(self.timeToFinish%60) < 10 ? '0' + Math.trunc(self.timeToFinish%60):Math.trunc(self.timeToFinish%60)}`;
 			self.timeToFinish--;
 			if((self.get()) < 0) {
 				self.stopTimer();

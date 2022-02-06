@@ -3,11 +3,11 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 90vh;
+	height: 97vh;
 
 }
 .timer {
-	width: 80%;
+	width: 90%;
 
 }
 .timer > div{
