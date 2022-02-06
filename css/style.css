@@ -1,0 +1,29 @@
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+
+}
+.timer {
+	width: 80%;
+
+}
+.timer > div{
+	width: 70%;
+	height: 42vh;
+	margin: 10px auto 0;
+	background: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.timer__body{
+	color: #fff;
+	font-size: 30px;
+}
+
+._active{
+	background-color: #fe3 !important;
+}
