@@ -11,8 +11,8 @@ body{
 
 }
 .timer > div{
-	width: 90%;
-	height: 42vh;
+	width: 100%;
+	height: 49vh;
 	margin: 10px auto 0;
 	background: #333;
 	display: flex;
@@ -23,7 +23,10 @@ body{
 	color: #fff;
 	font-size: 30px;
 }
-
+.first__button{
+	transform: rotate(180deg);
+}
 ._active{
+	color: #000;
 	background-color: #fe3 !important;
 }
