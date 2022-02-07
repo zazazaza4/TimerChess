@@ -9,14 +9,16 @@ body{
 	justify-content: center;
 	align-items: center;
 }
+
 .timer {
-	width: 90%;
+	width: 100%;
+	height: 100%;
 
 }
 .timer > div{
 	width: 100%;
-	height: 49vh;
-	margin: 0 auto 0;
+	height: 50%;
+	margin:auto;
 	background: #333;
 	display: flex;
 	justify-content: center;
